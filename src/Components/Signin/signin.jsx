@@ -2,7 +2,6 @@ import { useState } from "react";
 import "./signin.css";
 import Home from "../../Pages/Home/home";
 import SignUp from "../Signup/signup";
-import HomeLoggedIn from "../../Pages/Home-logged-in/home-logged-in";
 
 const SignIn = () => {
   const [email, setEmail] = useState("");
@@ -14,10 +13,6 @@ const SignIn = () => {
     console.log("Sign in form submitted with:", email, password);
     setIsSignedIn(true);
   };
-
-  if (isSignedIn) {
-    return <HomeLoggedIn props={isSignedIn} email={email} />;
-  }
 
   return (
     <div className="auth">

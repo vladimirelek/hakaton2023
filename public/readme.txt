@@ -1,0 +1,1 @@
+iz cmd prompta pokrenuti komande 'npm insall' i zatim 'npm start'

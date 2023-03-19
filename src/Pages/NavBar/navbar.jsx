@@ -14,6 +14,9 @@ const NavigationBar = () => {
           </Link>
         </div>
         <div className="navbar__links">
+          <Link to={"/windows"} className="navbar__link">
+            WINDOWS
+          </Link>
           <Link to={"/login"} className="navbar__link">
             LOGIN
           </Link>

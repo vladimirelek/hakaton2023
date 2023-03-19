@@ -35,3 +35,8 @@
 .navbar__link:hover {
   color: #007bff;
 }
+
+.active {
+  background-color: blue;
+  color: white;
+}

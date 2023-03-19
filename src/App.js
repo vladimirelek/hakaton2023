@@ -3,7 +3,9 @@ import { Route, Routes } from "react-router-dom";
 import NavigationBar from "./Pages/NavBar/navbar";
 import Home from "./Pages/Home/home";
 import Login from "./Pages/Authentication/auth";
-import HomeLoggedIn from "./Pages/Home-logged-in/home-logged-in";
+import * as mdb from "mdb-ui-kit"; // lib
+import { Input } from "mdb-ui-kit"; // module
+import Windows from "./Pages/windows/windows";
 const App = () => {
   return (
     <div className="App">
@@ -11,7 +13,7 @@ const App = () => {
         <Route path="/" element={<NavigationBar />}>
           <Route index path="/" element={<Home />} />
           <Route path="login" element={<Login />} />
-          <Route path="home-logged-in" element={<HomeLoggedIn />} />
+          <Route path="windows" element={<Windows />} />
         </Route>
       </Routes>
     </div>

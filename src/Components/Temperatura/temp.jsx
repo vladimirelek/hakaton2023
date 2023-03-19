@@ -58,15 +58,12 @@ const Temperature = () => {
     <div className="container">
       <div className="widget">
         <div className="date">{`Vrijeme:${currentTime}`}</div>
-        <div className="city">{city}</div>
-        <div className="temp">{temperature} °C</div>
-        <div className="wind">{`Vjetar:${windSpeed}km/h`}</div>
-        <div className="unos-lokacije">
-          <input type="text" id="textInput" placeholder="unesite lokaciju" />
-          <button className="btn-lokacija" onClick={storeInput}>
-            Unesi
-          </button>
+        <div class="row">
+          <div className="city">{city}</div>
+          <div className="temp">{temperature} °C</div>
         </div>
+
+        <div className="wind">{`Vjetar:${windSpeed}km/h`}</div>
       </div>
       <div className="widget1">
         {wco < 45 ? (
@@ -82,8 +79,28 @@ const Temperature = () => {
             alt="nista"
           />
         )}
-        <div className="tekst">{wco < 45 ? "Nije oblacno" : "Oblacno"}</div>
-        <div className="tekst">{wco > 55 ? "Pada kisa" : "Ne Pada"}</div>
+      </div>
+
+      <div className="tekst">
+        {wco > 55 ? (
+          <img
+            className="slika1"
+            src="https://cdn-icons-png.flaticon.com/512/31/31823.png?w=740&t=st=1679190140~exp=1679190740~hmac=072d54bbfee95be4f6baf3bd07c87eeec46303364416f08a144abc532b884a68"
+            alt="nista"
+          />
+        ) : (
+          <img
+            className="slika1"
+            src="https://cdn-icons-png.flaticon.com/512/106/106045.png"
+            alt="nista"
+          />
+        )}
+        <div className="unos-lokacije">
+          <input type="text" id="textInput" placeholder="unesite lokaciju" />
+          <button className="btn-lokacija" onClick={storeInput}>
+            Unesi
+          </button>
+        </div>
       </div>
     </div>
   );

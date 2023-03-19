@@ -1,0 +1,25 @@
+* {
+  font-family: "Raleway", sans-serif;
+}
+.kanta {
+  padding: 5px;
+  margin-left: 20px;
+  margin-top: 0;
+  background: white;
+  border: 1px solid red;
+}
+
+.kanta:hover {
+  background-color: red;
+  transition: background-color 0.5s;
+}
+
+.btnDodaj {
+  padding: 5px;
+  background: white;
+  border: 1px solid rgb(62, 220, 62);
+}
+.btnDodaj:hover {
+  background-color: rgb(62, 220, 62);
+  transition: background-color 0.5s;
+}
